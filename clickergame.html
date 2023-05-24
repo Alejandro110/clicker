@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<div class="content">
+    <div class="container">
+
+        <img class="cookie" src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/7/25/0/FNM_090112-Mix-and-Match-Classic-Cookies-Recipe-03_s4x3.jpg.rend.hgtvcom.616.462.suffix/1371607143890.jpeg">
+        <div class="row">
+            <button id="Click">Click</button>
+
+
+
+            <div class="row">
+                <button id="Shop">Shop</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="score"> </div>
+
+<script>
+    const content = document.querySelector('.content');
+    const points = document.getElementById('score');
+    const image = document.getElementById('image');
+    const shop = document.getElementById('shop');
+    const button = document.getElementById('Click');
+
+    let score=0
+
+    button.addEventListener('click', function (){
+
+
+        score=score+1
+        points.innerHTML=score
+        if (score >=300){
+            shop
+        }
+    })
+    shop.addEventListener('click',function (){
+
+    })
+
+
+</script>
+</body>
+</html>
